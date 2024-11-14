@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<style>
+  
+    .parent{
+        height: 620px;
+        width: 1350px;
+        /* border: 2px solid red; */
+        background-color:black;
+        display: flex;
+        gap: 40px;
+    }
+    .child1{
+        height: 620px;
+        width: 650px;
+        /* border: 2px solid purple; */
+        display: flex;
+       justify-content: center;
+       align-items: end;
+       flex-direction: column;
+       gap: 10px;
+       
+       
+        
+        
+    }
+    .c1{
+        height: 60px;
+        width: 500px;
+        /* border: 2px solid blue; */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 5px;
+        
+       
+    }
+    .c1 >.a1{
+        height: 30px;
+        width: 200px;
+        /* border: 2px solid goldenrod; */
+        font-size: 30px;
+        color: white;
+    }
+    .c1 >.a2{
+        height: 30px;
+        width: 20px;
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: red;
+       
+    }
+    .a2 >.fa-solid{
+       color: red;
+       font-size: 30px;
+    }
+    .c2{
+        height: 100px;
+        width: 600px;
+        /* border: 2px solid green; */
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        align-items: end;
+        
+    }
+    .c2 >.d1{
+        height: 40px;
+        width: 165px;
+        /* border: 2PX solid blue; */
+        font-size: 25px;
+        color: red;
+        
+    }
+    .c2 >.d2{
+        height: 50px;
+        width: 650px;  
+        /* border: 2px solid red; */
+        color: white;
+        font-size: 20px;
+    }
+    .c3{
+        height: 100px;
+        width: 600px;
+        /* border: 2px solid blueviolet; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+    }
+    .k1{
+        height: 40px;
+        width: 190px;
+        /* border: 2px solid red; */
+        font-size:25px ;
+        color: red;
+    }
+    .k2{
+        height: 60px;
+        width: 650px;  
+        /* border: 2px solid red; */
+        color: white;
+        font-size: 20px;
+    }
+    .c4{
+        height: 100px;
+        width: 600px;
+        /* border: 2px solid greenyellow; */
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
+    .n1{
+        height: 40px;
+        width: 190px;
+        /* border: 2px solid red; */
+        font-size:25px ;
+        color: red;
+
+    }
+    .n2{
+        height: 60px;
+        width: 650px;  
+        /* border: 2px solid red; */
+        color: white;
+        font-size: 20px;
+
+    }
+   
+    .child2{
+        height:620px;
+        width: 650px;
+        /* border: 2px solid purple; */
+        position: relative;
+        background-color: aqua;
+        background-position: center;
+        background-size: cover;
+        background-image: url(https://www.keentechnos.com/assets/images/servicerightimg.jpg);
+    
+
+    
+    }
+    .h1{
+        height: 50px;
+        width: 50px;
+        /* border: 2px solid blue; */
+        border-radius: 50%;
+        margin-top:200px ;
+        margin-left: -25px;
+        position: absolute;
+        background-color: white;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1 >.fa-solid{
+        font-size: 25px;
+        color: red;
+        
+    }
+    .h2{
+        height: 50px;
+        width: 50px;
+        /* border: 2px solid blue; */
+        border-radius: 50%;
+        margin-top:300px ;
+        margin-left: -25px;
+        position: absolute;
+        background-color: white;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .h2 >.fa-solid{
+        font-size: 25px;
+        color: red;
+        
+
+    }
+    .h3{
+        height: 50px;
+        width: 50px;
+        /* border: 2px solid blue; */
+        border-radius: 50%;
+        margin-top:400px ;
+        margin-left: -25px;
+        position: absolute;
+        background-color: white;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .h3 >.fa-solid{
+        font-size: 25px;
+        color: red;
+
+    }
+</style>
+    
+
+<body>
+  <div class="parent">
+    <div class="child1">
+        <div class="c1">
+            <div class="a1">OUR SERVICE</div>
+            <div class="a2">
+                <i class="fa-solid fa-grip-lines-vertical fa-bounce"></i>
+            </div>
+        </div>
+        <div class="c2">
+            <div class="d1">WEB DESIGN</div>
+            <div class="d2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, amet quisquam iste cumque corrupti sunt eum, </div>
+        </div>
+        <div class="c3">
+            <div class="k1">FRONT DESIGN</div>
+            <div class="k2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sed  delenwo repellendus enim sint neque,    </div>
+        </div>
+        <div class="c4">
+            <div class="n1">PHOTOGRAPHY</div>
+            <div class="n2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio at  hrreprehenderi eius rerum vero archite</div>
+        </div>
+       
+
+      
+    </div>
+    <div class="child2">
+        <div class="h1">
+            <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div class="h2">
+            <i class="fa-solid fa-print"></i>
+        </div>
+        <div class="h3">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+    </div>
+  </div>  
+     
+</body>
+</html>
